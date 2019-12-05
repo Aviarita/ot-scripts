@@ -1,10 +1,7 @@
 var options = []
 function onVoteOptions() {
-    options[0] = Event.GetString("option1");
-    options[1] = Event.GetString("option2");
-    options[2] = Event.GetString("option3");
-    options[3] = Event.GetString("option4");
-    options[4] = Event.GetString("option5");
+    for (var i=0; i<=4; i++)
+        options[i] = Event.GetString("option"+i);
 }
 function onVoteCast() {
     var entid = Event.GetInt("entityid");
